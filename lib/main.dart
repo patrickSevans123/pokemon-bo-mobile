@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pokemon_bo/menu.dart';
+import 'package:pokemon_bo/screens/menu.dart';
 
 void main() {
   runApp(const MyApp());
