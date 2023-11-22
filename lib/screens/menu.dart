@@ -17,7 +17,7 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Shopping List',
+          'Pokemon Bo',
         ),
         backgroundColor: Colors.indigo,
         foregroundColor: Colors.white,

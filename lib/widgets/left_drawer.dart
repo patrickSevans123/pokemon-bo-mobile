@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pokemon_bo/screens/list_product.dart';
 import 'package:pokemon_bo/screens/menu.dart';
 import 'package:pokemon_bo/screens/shoplist_form.dart';
 
@@ -17,7 +18,7 @@ class LeftDrawer extends StatelessWidget {
             child: Column(
               children: [
                 Text(
-                  'Shopping List',
+                  'Pokemon Bo',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 30,
@@ -26,7 +27,7 @@ class LeftDrawer extends StatelessWidget {
                   ),
                 ),
                 Padding(padding: EdgeInsets.all(10)),
-                Text("Catat seluruh keperluan belanjamu di sini!",
+                Text("Beli Pokemon Favoritmu Disini!",
                     style: TextStyle(
                     fontSize: 15,
                     color: Colors.white,
@@ -60,6 +61,17 @@ class LeftDrawer extends StatelessWidget {
                 MaterialPageRoute(builder: (context) => const ShopFormPage()),
               );
             },
+          ),
+          ListTile(
+              leading: const Icon(Icons.shopping_basket),
+              title: const Text('Daftar Produk'),
+              onTap: () {
+                  // Route menu ke halaman produk
+                  Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const ProductPage()),
+                  );
+              },
           ),
         ],
       ),
